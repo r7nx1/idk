@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyMC - Server Rules</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url("/api/placeholder/1920/1080");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #f59e0b;
+        }
+
+        .hero-subtitle {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-size: 1.4rem;
+            color: #fde68a;
+            max-width: 40rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .rules-container {
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, black, #78350f);
+        }
+
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .rule-card {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .rule-card:hover {
+            border-color: #f59e0b;
+            transform: translateY(-5px);
+        }
+
+        .rule-title {
+            font-size: 1.5rem;
+            color: #f59e0b;
+            margin-bottom: 1rem;
+        }
+
+        .rule-description {
+            color: #d1d5db;
+            margin-bottom: 1rem;
+        }
+
+        .penalty {
+            color: #9ca3af;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: black;
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        footer p {
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">StrategyMC</h1>
+            <h2 class="hero-subtitle">Server Rules</h2>
+            <p class="hero-description">
+                By joining the StrategyMC server, you agree to abide by the following rules. Failure to comply may result in penalties, including bans or blacklisting.
+            </p>
+        </div>
+    </section>
+
+    <section class="rules-container">
+        <div class="rules-grid">
+            <div class="rule-card">
+                <h3 class="rule-title">Allowed Age to Join the Server</h3>
+                <p class="rule-description">The allowed age is 9 years. Any player younger than this, their guardian or responsible person is fully accountable.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Profanity and NSFW Content</h3>
+                <p class="rule-description">Profanity or any reference to inappropriate or explicit content (NSFW) is not allowed.</p>
+                <p class="penalty">Penalty: Added to the Blacklist.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Exploiting Bugs for Personal Gain</h3>
+                <p class="rule-description">Exploiting any game bugs and failing to report them to the administration is prohibited.</p>
+                <p class="penalty">Penalty: 14-day ban with items obtained from the exploit being confiscated.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Real Money Transactions or Gambling</h3>
+                <p class="rule-description">Real money transactions or gambling are strictly forbidden.</p>
+                <p class="penalty">Penalty: 144-day ban.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Advertising Other Servers</h3>
+                <p class="rule-description">Advertising other servers, either via direct messages on Discord or within the Minecraft server, is not allowed.</p>
+                <p class="penalty">Penalty: Added to the Blacklist.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Using Hacked Clients or Illegal Mods</h3>
+                <p class="rule-description">Using cheats or illegal modifications such as Killaura, Fly, Speed, Scaffolding, and other such mods is not allowed.</p>
+                <p class="penalty">Penalty: Permanent Ban.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Teaming in Solo Games</h3>
+                <p class="rule-description">Teaming with other players in solo games is prohibited.</p>
+                <p class="penalty">Penalty: Points deduction and a warning, with a ban if repeated.</p>
+            </div>
+
+            <div class="rule-card">
+                <h3 class="rule-title">Hacking or Threatening to DDoS the Server</h3>
+                <p class="rule-description">Threatening to hack the server or launching DDoS attacks is not allowed.</p>
+                <p class="penalty">Penalty: Added to the Blacklist.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let path = window.location.pathname;
+            
+            // لو المستخدم دخل على /rules بدون .html
+            if (path === "/rules") {
+                window.location.replace("/rules.html");
+            }
+    
+            // لو الرابط يحتوي على .html، نشيله من العنوان
+            if (path.endsWith(".html")) {
+                window.history.replaceState(null, "", path.replace(".html", ""));
+            }
+        });
+    
+        // منع كليك اليمين على العناصر اللي فيها كلاس .server-address
+        document.addEventListener('contextmenu', function (e) {
+            if (e.target.closest('.server-address')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    
+    <footer>
+        <p>© 2025 StrategyMC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

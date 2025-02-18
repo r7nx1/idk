@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyMC - Server Policies</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url("/api/placeholder/1920/1080");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #f59e0b;
+        }
+
+        .hero-subtitle {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-size: 1.4rem;
+            color: #fde68a;
+            max-width: 40rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .policies-container {
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, black, #78350f);
+        }
+
+        .policies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .policy-card {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .policy-card:hover {
+            border-color: #f59e0b;
+            transform: translateY(-5px);
+        }
+
+        .policy-title {
+            font-size: 1.5rem;
+            color: #f59e0b;
+            margin-bottom: 1rem;
+        }
+
+        .policy-description {
+            color: #d1d5db;
+        }
+
+        .policy-description p {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: #fde68a;
+        }
+
+        footer {
+            background-color: black;
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        footer p {
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">StrategyMC</h1>
+            <h2 class="hero-subtitle">Server Policies</h2>
+            <p class="hero-description">
+                By accessing and using the StrategyMC server, you agree to comply with the following policies. These policies are designed to ensure a safe and enjoyable experience for all players.
+            </p>
+        </div>
+    </section>
+
+    <section class="policies-container">
+        <div class="policies-grid">
+            <div class="policy-card">
+                <h3 class="policy-title">Privacy Policy</h3>
+                <div class="policy-description">
+                    <p>We are committed to protecting players' privacy and will not collect or share any personal data without explicit consent.</p>
+                    <p>Player account data is stored solely to improve gameplay experience (such as name, email, and account settings).</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Usage Policy</h3>
+                <div class="policy-description">
+                    <p>The server is intended solely for a healthy and enjoyable gaming environment.</p>
+                    <p>Anyone can join the server, but the administration has the right to take action against any behavior that negatively impacts the gameplay experience.</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Player Interaction Policy</h3>
+                <div class="policy-description">
+                    <p>Players are encouraged to respect one another and interact positively.</p>
+                    <p>The administration reserves the right to intervene in case of player conflicts and impose actions based on the situation.</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Technical Support Policy</h3>
+                <div class="policy-description">
+                    <p>Technical support is provided through official channels such as <strong>Discord</strong> or email.</p>
+                    <p>The support team is committed to responding to player inquiries as quickly as possible and offering solutions to technical or account-related issues.</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Ban and Re-entry Policy</h3>
+                <div class="policy-description">
+                    <p>If an account is banned due to policy violations, players may submit an appeal through official channels.</p>
+                    <p>Each case will be reviewed individually by the administration, and the ban may be lifted based on the administrative decision.</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Updates and Modifications Policy</h3>
+                <div class="policy-description">
+                    <p>The server may undergo updates periodically to improve performance or add new features.</p>
+                    <p>All updates and modifications will be announced via official channels such as <strong>Discord</strong> or in-game.</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Content and Ownership Policy</h3>
+                <div class="policy-description">
+                    <p>All server content, including maps, mods, and plugins, is the property of the developers.</p>
+                    <p>Players are prohibited from modifying or distributing server content without permission.</p>
+                </div>
+            </div>
+
+            <div class="policy-card">
+                <h3 class="policy-title">Marketing and Promotion Policy</h3>
+                <div class="policy-description">
+                    <p>Advertising within the server is only allowed if it directly relates to the server or complies with the rules.</p>
+                    <p>Any unwanted promotion or spam will result in immediate consequences, such as temporary or permanent bans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+            // Prevent right-click on server address
+            document.addEventListener('contextmenu', function(e) {
+                if (e.target.closest('.server-address')) {
+                    e.preventDefault();
+                }
+            });
+    
+    
+            if (window.location.pathname.endsWith(".html")) {
+        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+    }
+    
+        </script>
+    <footer>
+        <p>© 2025 StrategyMC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
